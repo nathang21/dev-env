@@ -50,7 +50,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux go golang colored-man-pages)
+plugins=(git tmux go golang colored-man-pages alias-tips common-aliases extract history zsh-completions)
 
 # User configuration
 
@@ -84,6 +84,6 @@ source /etc/bash_completion.d/g4d
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+zstyle ':completion:*' users root $USER
 alias editor=vim
 source /etc/bash_completion.d/hb.bash
