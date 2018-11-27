@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/usr/local/google/home/nathanguenther/.oh-my-zsh
-source /etc/bash_completion.d/g4d
+export ZSH=/home/nathang21/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -59,7 +58,6 @@ plugins=(git tmux go golang colored-man-pages alias-tips common-aliases extract 
 
 source $ZSH/oh-my-zsh.sh
 # source /etc/bash.bashrc.d/shell_history_forwarder.sh
-source /etc/bash_completion.d/g4d
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -84,6 +82,7 @@ source /etc/bash_completion.d/g4d
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export PATH=$PATH:/usr/local/go/bin
+
 zstyle ':completion:*' users root $USER
 alias editor=vim
-source /etc/bash_completion.d/hb.bash
