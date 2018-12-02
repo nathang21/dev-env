@@ -24,3 +24,8 @@ go
 golang 
 colored-man-page
 ```
+
+## Vim Setup
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
